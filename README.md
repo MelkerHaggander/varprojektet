@@ -14,3 +14,6 @@ Jag arbetade denna lektion med den grafiska profilen. Jag skapade våran logotyp
 
 #### **Vecka: 14**
 Jag arbetade med den grafiska profilen en större del av lektionen. Jag började med att förfina vår typografi slide i den grafiska profilen. Skapade ett nytt GitHub repo och bjöd in mina medarbetare. Arbetade med att strukturera, förfina och lägga till sociala medieikoner i ikon sliden på våran grafiska profil. Jag hjälpte även en arbetskamrat med formulering av text.
+
+#### **Vecka: 16**
+Idag arbetade jag med att skapa hemsidan. Jag hade under en stor del av lektionen problem med bootstrap, men lyckades tillslut lösa problemet. Under dagens lektion lyckades jag skapa en navigation bar och alla sektioner med text och justera dessa.
