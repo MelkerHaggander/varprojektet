@@ -17,3 +17,6 @@ Jag arbetade med den grafiska profilen en större del av lektionen. Jag började
 
 #### **Vecka: 16**
 Idag arbetade jag med att skapa hemsidan. Jag hade under en stor del av lektionen problem med bootstrap, men lyckades tillslut lösa problemet. Under dagens lektion lyckades jag skapa en navigation bar och alla sektioner med text och justera dessa.
+
+#### **Vecka: 17**
+Idag har jag arbetat med hemsidan. Jag arbeta med navigations baren under en stor del av lektionen och dom på bootstrap.build är inte så smarta, men det gick bra ändå. Problemet var att det tydligen inte gick att skapa en custom bootstrap för bootstrap 5 med bootstrap.build. Dåligt. Jag löste det i alla fall. Sedan arbetade jag med resten av sidan. 
