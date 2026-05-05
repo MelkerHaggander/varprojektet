@@ -20,3 +20,6 @@ Idag arbetade jag med att skapa hemsidan. Jag hade under en stor del av lektione
 
 #### **Vecka: 17**
 Idag har jag arbetat med hemsidan. Jag arbeta med navigations baren under en stor del av lektionen och dom på bootstrap.build är inte så smarta, men det gick bra ändå. Problemet var att det tydligen inte gick att skapa en custom bootstrap för bootstrap 5 med bootstrap.build. Dåligt. Jag löste det i alla fall. Sedan arbetade jag med resten av sidan. 
+
+#### **Vecka: 19**
+Idag har jag arbetat med hemsidan, hela lektionen. Jag förfinade hemsidan och försöker nu få ned textradslängden till runt 65 tecken. Snart är jag färdig med hemsidan och skall sedan lägga till fler sidor genom att kopiera html koden och justera små detaljer.
