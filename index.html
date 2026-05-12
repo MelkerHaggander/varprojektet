@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hemsidehjälpen hjälper dig att bygga moderna, snygga och funktionella webbplatser. Vi gör det svåra enkelt.">
+    <title>Hemsidehjälpen – Vi gör det svåra enkelt</title>
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* =========================================================
+           Designsystem – Hemsidehjälpen
+           Färger:  #00092D (mörk) | #F8F0FB (ljus)
+                    #22577A (blå)  | #A98743 (guld)
+           Rubriker: Lora -> Times New Roman -> Arial -> sans-serif
+           Brödtext: Times New Roman -> Arial -> sans-serif
+           ========================================================= */
+
+        /* Enhetlig bakgrund vid overscroll (uppåt och neråt).
+           Eftersom navbar och footer är #00092D matchar bakgrunden. */
+        html {
+            background-color: #00092D;
+            scroll-padding-top: 70px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #F8F0FB;
+            color: #00092D;
+            font-family: "Times New Roman", Times, Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6,
+        .display-4 {
+            font-family: "Lora", "Times New Roman", Times, Arial, sans-serif;
+            color: #00092D;
+            font-weight: 700;
+        }
+
+        section h2 {
+            color: #22577A;
+        }
+
+        /* ---------- Skip-länk (tillgänglighet) ---------- */
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+            top: 0;
+            background-color: #00092D;
+            color: #F8F0FB;
+            padding: 0.5rem 1rem;
+            z-index: 9999;
+        }
+        .skip-link:focus {
+            left: 0;
+        }
+
+        /* ---------- Navbar ---------- */
+        .brand-navbar {
+            background-color: #00092D !important;
+        }
+        .brand-navbar .navbar-brand {
+            font-family: "Lora", serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #F8F0FB;
+        }
+        .brand-navbar .navbar-brand:hover,
+        .brand-navbar .navbar-brand:focus {
+            color: #A98743;
+        }
+        .brand-navbar .nav-link {
+            color: #F8F0FB;
+        }
+        .brand-navbar .nav-link:hover,
+        .brand-navbar .nav-link:focus,
+        .brand-navbar .nav-link.active {
+            color: #A98743;
+        }
+        .brand-navbar .dropdown-menu {
+            background-color: #00092D;
+            border: 1px solid #22577A;
+        }
+        .brand-navbar .dropdown-item {
+            color: #F8F0FB;
+        }
+        .brand-navbar .dropdown-item:hover,
+        .brand-navbar .dropdown-item:focus {
+            background-color: #22577A;
+            color: #F8F0FB;
+        }
+        .brand-navbar .form-control {
+            background-color: #F8F0FB;
+            color: #00092D;
+            border: 1px solid #F8F0FB;
+        }
+
+        /* ---------- Hero ---------- */
+        .hero {
+            background-color: #00092D;
+            color: #F8F0FB;
+            padding: 8rem 0 5rem;
+        }
+        .hero h1,
+        .hero .lead {
+            color: #F8F0FB;
+        }
+        .hero .tagline {
+            color: #A98743;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        /* ---------- Knappar ---------- */
+        .btn-gold {
+            background-color: #A98743;
+            color: #00092D;
+            border: 2px solid #A98743;
+            font-weight: 700;
+        }
+        .btn-gold:hover,
+        .btn-gold:focus {
+            background-color: #F8F0FB;
+            color: #00092D;
+            border-color: #F8F0FB;
+        }
+        .btn-outline-light-brand {
+            background-color: transparent;
+            color: #F8F0FB;
+            border: 2px solid #F8F0FB;
+            font-weight: 700;
+        }
+        .btn-outline-light-brand:hover,
+        .btn-outline-light-brand:focus {
+            background-color: #F8F0FB;
+            color: #00092D;
+        }
+        .btn-outline-dark-brand {
+            background-color: transparent;
+            color: #00092D;
+            border: 2px solid #00092D;
+            font-weight: 700;
+        }
+        .btn-outline-dark-brand:hover,
+        .btn-outline-dark-brand:focus {
+            background-color: #00092D;
+            color: #F8F0FB;
+        }
+        .btn-search {
+            background-color: #A98743;
+            color: #00092D;
+            border-color: #A98743;
+            font-weight: 700;
+        }
+        .btn-search:hover,
+        .btn-search:focus {
+            background-color: #F8F0FB;
+            color: #00092D;
+            border-color: #F8F0FB;
+        }
+
+        /* ---------- Kort ---------- */
+        .feature-card {
+            background-color: #22577A;
+            color: #F8F0FB;
+            border: none;
+            height: 100%;
+        }
+        .feature-card .card-title,
+        .feature-card .card-text {
+            color: #F8F0FB;
+        }
+
+        /* ---------- Footer ---------- */
+        .brand-footer {
+            background-color: #00092D;
+            color: #F8F0FB;
+        }
+        .brand-footer p {
+            color: #F8F0FB;
+        }
+        .social-link {
+            display: inline-block;
+            color: #F8F0FB;
+            font-size: 1.5rem;
+            margin: 0 0.6rem;
+            text-decoration: none;
+        }
+        .social-link:hover,
+        .social-link:focus {
+            color: #A98743;
+            text-decoration: none;
+        }
+
+        /* ---------- Fokus-stilar (tillgänglighet) ---------- */
+        a:focus,
+        button:focus,
+        input:focus {
+            outline: 2px solid #A98743;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#main" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg brand-navbar fixed-top shadow" aria-label="Huvudnavigation">
+            <div class="container">
+                <a class="navbar-brand" href="#">Hemsidehjälpen</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Visa eller dölj meny">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#tjanster">Tjänster</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Verktyg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kurser</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Om oss
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <a class="dropdown-item" href="#kontakt">Kontakta oss</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline ml-auto" role="search">
+                        <label for="searchInput" class="sr-only">Sök på sidan</label>
+                        <input id="searchInput" class="form-control mr-2" type="search" placeholder="Sök här..." aria-label="Sök">
+                        <button class="btn btn-search" type="submit">Sök</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="display-4">Välkommen till Hemsidehjälpen</h1>
+                <p class="tagline mt-3 mb-2">Hemsidor som faktiskt gör affärer.</p>
+                <p class="lead mb-4">Vi gör det svåra enkelt – din partner för moderna, snygga och funktionella webbplatser.</p>
+                <a href="#kontakt" class="btn btn-gold btn-lg mr-2 mb-2">Få en kostnadsfri offert</a>
+                <a href="#kontakt" class="btn btn-outline-light-brand btn-lg mb-2">Låt oss prata om ditt projekt</a>
+            </div>
+        </section>
+
+        <div class="container">
+
+            <!-- Vad vi erbjuder -->
+            <section class="my-5" id="tjanster">
+                <h2 class="text-center mb-4">Vad vi erbjuder</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="lead text-center">
+                            Hemsidehjälpen hjälper dig att skapa moderna, snygga och funktionella webbplatser. Oavsett om du är nybörjare eller har tidigare erfarenhet hjälper vi dig att ta nästa steg i din utveckling. Vi tror på enkelhet, tydlighet och kvalitet.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Korten -->
+            <section class="my-5">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card feature-card shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Tjänster</h3>
+                                <p class="card-text">
+                                    Vi erbjuder skräddarsydd hjälp för att utveckla och förbättra din hemsida – från design till funktion.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card feature-card shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Verktyg</h3>
+                                <p class="card-text">
+                                    Upptäck smarta verktyg som gör det enklare att skapa, optimera och driva din hemsida.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card feature-card shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Kurser</h3>
+                                <p class="card-text">
+                                    Lär dig bygga och hantera hemsidor genom våra enkla och praktiska kurser, steg för steg.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Varför välja oss -->
+            <section class="my-5">
+                <h2 class="mb-3">Varför välja oss</h2>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>
+                            Vi gör webbutveckling enkel och begriplig för alla. Genom vårt engagemang och fokus på användarvänlighet skapar vi lösningar som är anpassade efter dina behov. Vi arbetar nära dig genom hela processen och lägger stor vikt vid tydlig kommunikation, så att du alltid förstår vad vi gör och varför.
+                        </p>
+                        <p>
+                            Samtidigt håller vi oss uppdaterade med de senaste teknikerna och trenderna inom webbutveckling. Det gör att vi kan leverera moderna, hållbara och framtidssäkra webbplatser där du kan växa i din egen takt.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- För nybörjare och avancerade -->
+            <section class="my-5">
+                <h2 class="mb-3">För nybörjare och avancerade</h2>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>
+                            Oavsett om du är nybörjare eller mer erfaren hjälper vi dig att utvecklas inom webbutveckling. Vi anpassar innehållet efter din nivå – från grunderna till mer avancerade områden som struktur, optimering och bästa praxis. Du får inte bara lära dig att bygga hemsidor, utan också förstå hur och varför allt fungerar bakom kulisserna.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vår filosofi -->
+            <section class="my-5">
+                <h2 class="mb-3">Vår filosofi</h2>
+                <p>
+                    Vi tror att webbutveckling inte behöver vara komplicerat. Med rätt vägledning kan vem som helst lära sig att skapa imponerande webbplatser.
+                </p>
+                <p>
+                    Därför fokuserar vi på att bryta ner komplexa koncept i enkla steg. Vi använder tydliga exempel och praktiska övningar för att göra lärandet både effektivt och roligt.
+                </p>
+                <p>
+                    Vår filosofi bygger på att kunskap ska vara tillgänglig för alla, och att lärande ska kännas motiverande snarare än överväldigande.
+                </p>
+            </section>
+
+            <!-- Kom igång idag (CTA) -->
+            <section class="my-5 text-center" id="kontakt">
+                <h2 class="mb-4">Kom igång idag</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="mb-4">
+                            Är du redo att ta första steget? Utforska våra kurser, läs våra guider eller kontakta oss direkt för att diskutera ditt projekt. Hemsidehjälpen är mer än bara en tjänst – det är en plats där idéer blir verklighet.
+                        </p>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-gold btn-lg mr-2 mb-2">Utforska kurser</a>
+                <a href="#" class="btn btn-outline-dark-brand btn-lg mb-2">Kontakta oss</a>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="brand-footer py-4 mt-5">
+        <div class="container text-center">
+            <nav aria-label="Sociala medier" class="mb-3">
+                <a href="#" class="social-link" aria-label="Hemsidehjälpen på Facebook">
+                    <i class="bi bi-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Hemsidehjälpen på LinkedIn">
+                    <i class="bi bi-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Hemsidehjälpen på X">
+                    <i class="bi bi-twitter-x" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Hemsidehjälpen på Instagram">
+                    <i class="bi bi-instagram" aria-hidden="true"></i>
+                </a>
+            </nav>
+            <p class="mb-0">© 2025 Hemsidehjälpen. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
