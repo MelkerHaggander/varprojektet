@@ -23,3 +23,6 @@ Idag har jag arbetat med hemsidan. Jag arbeta med navigations baren under en sto
 
 #### **Vecka: 19**
 Idag har jag arbetat med hemsidan, hela lektionen. Jag förfinade hemsidan och försöker nu få ned textradslängden till runt 65 tecken. Snart är jag färdig med hemsidan och skall sedan lägga till fler sidor genom att kopiera html koden och justera små detaljer.
+
+#### **Vecka: 20**
+Idag har jag främst arbetat med hemsidan. Jag har förbättrat hemsidans designen och användarvänlighet samt påbörjat implementeringen av flera sidor. Jag har även gjort minimala förbättringar på style guiden, lagt in mitt nuvarande index.html och bootstrap.css dokument i github repot varprojektet.
