@@ -26,3 +26,7 @@ Idag har jag arbetat med hemsidan, hela lektionen. Jag förfinade hemsidan och f
 
 #### **Vecka: 20**
 Idag har jag främst arbetat med hemsidan. Jag har förbättrat hemsidans designen och användarvänlighet samt påbörjat implementeringen av flera sidor. Jag har även gjort minimala förbättringar på style guiden, lagt in mitt nuvarande index.html och bootstrap.css dokument i github repot varprojektet.
+
+#### **Vecka: 21**
+Idag har jag arbetat med webbsidan. Jag har nu skapat 4 nya sidor genom att kopiera HTML koden från hemsidan och ändrat den lite. Jag har även ändrat all innehållande text. Jag har även arbetat med designen väldigt mycket och lagt till knappar vid korten och vid sektionerna på hemsidan. Jag har även skapat ett kontakt formulär som däremot saknar funktionalitet vid skrivande stund. Jag har även ändrat loggan på hemsidan och i style guiden. Jag har även arbetat ganska mycket med webbsidan hemma, så jag har gjort ganska mycket sedan senast.
+
