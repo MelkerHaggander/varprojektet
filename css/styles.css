@@ -1,34 +1,54 @@
 /* Hemsidehjälpen – egen CSS som komplement till
-   bootstrap.css. Hålls medvetet minimal: endast det
-   som inte finns som Bootstrap-utility i 4.5. */
+   bootstrap.css. Här ligger bara det som Bootstrap
+   inte har en färdig klass för. */
 
-/* Bakgrund vid överscroll matchar navbar/footer.
-   scroll-padding hindrar sticky-navbar från att täcka
-   målet vid ankarhopp. */
+/* Bakgrund vid scroll matchar navbar/footer. */
 html {
     background-color: #00092D;
     scroll-padding-top: 5rem;
     scroll-behavior: smooth;
 }
 
-/* Typografi enligt style guide.
-   Brödtext: Times New Roman -> Arial -> sans-serif
-   Rubriker: Lora -> Times New Roman -> Arial -> sans-serif
-   Bootstrap 4.5 har ingen utility för font-family. */
+/* Typografi enligt style guide. */
 body {
     font-family: "Times New Roman", Times, Arial, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6,
 .display-1, .display-2, .display-3, .display-4 {
-    font-family: "Lora", "Times New Roman", Times, Arial,
-                 sans-serif;
+    font-family: "Lora", "Times New Roman", Arial, sans-serif;
 }
 
-/* Optimal radlängd för läsbarhet — max ca 60-75 tecken/rad
-   enligt typografisk riktlinje (Bringhurst: 45-75 tecken).
-   Skyddar lead-text i jumbotron där containern är bred.
-   Centrering hanteras med Bootstrap-utilityn mx-auto. */
+/* Begränsa radlängd på lead-text för bättre läsbarhet. */
 .lead {
     max-width: 60ch;
+}
+
+/* Sociala medier-ikoner: gemensam storlek och hover. */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.15s ease-in-out;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    transform: scale(1.1);
+}
+
+/* TC Stenungsund-loggan under sociala ikoner. */
+.footer-partner img {
+    max-width: 120px;
+}
+
+/* Tjänster-cards: lätt skugga och hover-lyft. */
+.service-card {
+    border: 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
 }
