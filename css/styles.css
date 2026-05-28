@@ -1,51 +1,66 @@
-/* Hemsidehjälpen – egen CSS som komplement till
-   bootstrap.css. Här ligger bara det som Bootstrap
-   inte har en färdig klass för. */
+/* Egen CSS för Hemsidehjälpen.
+   Det mesta sköts av Bootstrap, här ligger bara det
+   som vi behövde själva. */
 
-/* Bakgrund vid scroll matchar navbar/footer. */
+/* Bakgrundsfärg matchar navbar och footer så det inte
+   blir vitt om man scrollar förbi sidans innehåll.
+   overflow-x stoppar att sidan kan dras i sidled. */
 html {
     background-color: #00092D;
-    scroll-padding-top: 5rem;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-/* Typografi enligt style guide. */
+/* Brödtext enligt vår style guide. */
 body {
     font-family: "Times New Roman", Times, Arial, sans-serif;
     font-size: 1.05rem;
     line-height: 1.6;
 }
 
+/* Rubriker använder Lora enligt style guiden.
+   overflow-wrap gör att långa ord inte spränger sidan. */
 h1, h2, h3, h4, h5, h6,
-.display-1, .display-2, .display-3, .display-4 {
+.display-4 {
     font-family: "Lora", "Times New Roman", Arial, sans-serif;
+    overflow-wrap: break-word;
 }
 
-/* Begränsa radlängd på lead-text för bättre läsbarhet. */
+/* Navbaren är fixed-top och täcker toppen av sidan.
+   Lite extra padding gör att rubriken inte göms bakom. */
+.jumbotron-fluid {
+    padding-top: 6rem;
+}
+
+/* Stora rubriken är för stor på mobil, så vi gör den
+   lite mindre när skärmen är smal. */
+@media (max-width: 576px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+
+/* Begränsar bredden på lead-text så den blir lättare
+   att läsa. Långa rader är jobbiga för ögat. */
 .lead {
     max-width: 60ch;
 }
 
-/* Sociala medier-ikoner: gemensam storlek och hover. */
+/* Alla ikoner ska vara lika stora. Hovern gör dem
+   lite större så man ser att de går att klicka. */
 .social-icon {
     width: 40px;
     height: 40px;
     transition: transform 0.15s ease-in-out;
 }
 
-.social-icon:hover,
-.social-icon:focus {
+.social-icon:hover {
     transform: scale(1.1);
 }
 
-/* TC Stenungsund-loggan under sociala ikoner. */
-.footer-partner img {
-    max-width: 120px;
-}
-
-/* Tjänster-cards: lätt skugga och hover-lyft. */
+/* Korten lyfter sig lite uppåt när man hovrar.
+   Transition gör att det blir mjukt. */
 .service-card {
-    border: 0;
     transition: transform 0.2s ease-in-out;
 }
 
