@@ -3,41 +3,29 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-        content="Kontakta Hemsidehjälpen för en kostnadsfri offert eller ett förutsättningslöst samtal om ditt webbprojekt.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontakta Hemsidehjälpen för en kostnadsfri offert eller ett förutsättningslöst samtal om ditt webbprojekt.">
   <meta name="author" content="Hemsidehjälpen">
   <title>Kontakt – Hemsidehjälpen</title>
   <link rel="icon" type="image/svg+xml" href="img/ikon.svg">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="bg-light">
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
       <div class="container">
-        <a class="navbar-brand font-weight-bold
-                  d-inline-flex align-items-center"
-           href="index.html">
-          <img src="img/logo.svg" alt=""
-               width="45" height="40" class="mr-2">
+        <a class="navbar-brand font-weight-bold d-inline-flex align-items-center" href="index.html">
+          <img src="img/logo.svg" alt="" width="45" height="40" class="mr-2">
           Hemsidehjälpen
         </a>
-        <button class="navbar-toggler" type="button"
-                data-toggle="collapse"
-                data-target="#navbarContent"
-                aria-controls="navbarContent"
-                aria-expanded="false"
-                aria-label="Visa eller dölj meny">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Visa eller dölj meny">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse"
-             id="navbarContent">
+        <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Hem</a>
@@ -53,21 +41,15 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="kontakt.html"
-                 aria-current="page">Kontakt</a>
+              <a class="nav-link active" href="kontakt.html" aria-current="page">Kontakt</a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0"
-                role="search" action="#" method="get">
+          <form class="form-inline my-2 my-lg-0" role="search" action="#" method="get">
             <label for="searchInput" class="sr-only">
               Sök på sidan
             </label>
-            <input id="searchInput" name="q" type="search"
-                   class="form-control mr-sm-2 mb-2 mb-sm-0"
-                   placeholder="Sök..."
-                   aria-label="Sök på sidan">
-            <button class="btn btn-outline-light"
-                    type="submit">Sök</button>
+            <input id="searchInput" name="q" type="search" class="form-control mr-sm-2 mb-2 mb-sm-0" placeholder="Sök..." aria-label="Sök på sidan">
+            <button class="btn btn-outline-secondary" type="submit">Sök</button>
           </form>
         </div>
       </div>
@@ -76,8 +58,7 @@
 
   <main>
 
-    <section class="jumbotron jumbotron-fluid bg-dark
-                    text-light mb-0">
+    <section class="jumbotron jumbotron-fluid bg-dark text-light mb-0">
       <div class="container">
         <h1 class="display-4">Kontakta oss</h1>
         <p class="lead font-weight-bold mt-3 mb-2">
@@ -102,21 +83,16 @@
               Fyll i formuläret nedan så hör vi av oss
               med en kostnadsfri offert.
             </p>
-            <form action="mailto:mhaggander262@gmail.com"
-                  method="post" enctype="text/plain">
+            <form action="mailto:mhaggander262@gmail.com" method="post" enctype="text/plain">
               <div class="form-group">
                 <label for="kontaktNamn">Namn</label>
-                <input type="text" class="form-control"
-                       id="kontaktNamn" name="namn"
-                       autocomplete="name" required>
+                <input type="text" class="form-control" id="kontaktNamn" name="namn" autocomplete="name" required>
               </div>
               <div class="form-group">
                 <label for="kontaktEpost">
                   E-postadress
                 </label>
-                <input type="email" class="form-control"
-                       id="kontaktEpost" name="epost"
-                       autocomplete="email" required>
+                <input type="email" class="form-control" id="kontaktEpost" name="epost" autocomplete="email" required>
                 <small class="form-text text-muted">
                   Vi delar aldrig din e-postadress med
                   någon annan.
@@ -126,21 +102,15 @@
                 <label for="kontaktTelefon">
                   Telefon (frivilligt)
                 </label>
-                <input type="tel" class="form-control"
-                       id="kontaktTelefon" name="telefon"
-                       autocomplete="tel">
+                <input type="tel" class="form-control" id="kontaktTelefon" name="telefon" autocomplete="tel">
               </div>
               <div class="form-group">
                 <label for="kontaktMeddelande">
                   Berätta om ditt projekt
                 </label>
-                <textarea class="form-control"
-                          id="kontaktMeddelande"
-                          name="meddelande"
-                          rows="5" required></textarea>
+                <textarea class="form-control" id="kontaktMeddelande" name="meddelande" rows="5" required></textarea>
               </div>
-              <button type="submit"
-                      class="btn btn-primary btn-lg">
+              <button type="submit" class="btn btn-primary btn-lg">
                 Skicka förfrågan
               </button>
             </form>
@@ -149,38 +119,32 @@
             <h2 class="mb-3 text-primary">
               Andra sätt att nå oss
             </h2>
-            <article class="card shadow-sm
-                            bg-primary text-white mb-3">
+            <article class="card shadow-sm bg-primary text-white mb-3">
               <div class="card-body">
                 <h3 class="card-title h5">E-post</h3>
                 <p class="card-text mb-0">
-                  <a class="text-white"
-                     href="mailto:kontakt@hemsidehjalpen.se">
+                  <a class="text-white" href="mailto:kontakt@hemsidehjalpen.se">
                     kontakt@hemsidehjalpen.se
                   </a>
                 </p>
               </div>
             </article>
-            <article class="card shadow-sm
-                            bg-primary text-white mb-3">
+            <article class="card shadow-sm bg-primary text-white mb-3">
               <div class="card-body">
                 <h3 class="card-title h5">Telefon</h3>
                 <p class="card-text mb-0">
-                  <a class="text-white"
-                     href="tel:+46768668272">
+                  <a class="text-white" href="tel:+46768668272">
                     076-866 82 72
                   </a>
                 </p>
               </div>
             </article>
-            <article class="card shadow-sm
-                            bg-primary text-white">
+            <article class="card shadow-sm bg-primary text-white">
               <div class="card-body">
                 <h3 class="card-title h5">
                   Besöksadress
                 </h3>
-                <address class="card-text mb-0
-                                font-italic">
+                <address class="card-text mb-0 font-italic">
                   GYMNASIEVÄGEN 2,<br>
                   444 47 Stenungsund
                 </address>
@@ -233,55 +197,30 @@
           <h2 class="h6 text-uppercase">Följ oss</h2>
           <ul class="list-inline mb-0">
             <li class="list-inline-item mr-2 mb-2">
-              <a href="https://www.facebook.com"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 aria-label="Facebook (öppnas i ny flik)">
-                <img src="img/facebook.svg" alt=""
-                     class="social-icon"
-                     width="40" height="40" loading="lazy">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook (öppnas i ny flik)">
+                <img src="img/facebook.svg" alt="" class="social-icon" width="40" height="40" loading="lazy">
               </a>
             </li>
             <li class="list-inline-item mr-2 mb-2">
-              <a href="https://www.linkedin.com"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 aria-label="LinkedIn (öppnas i ny flik)">
-                <img src="img/linkedin.svg" alt=""
-                     class="social-icon"
-                     width="40" height="40" loading="lazy">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (öppnas i ny flik)">
+                <img src="img/linkedin.svg" alt="" class="social-icon" width="40" height="40" loading="lazy">
               </a>
             </li>
             <li class="list-inline-item mr-2 mb-2">
-              <a href="https://x.com"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 aria-label="X (öppnas i ny flik)">
-                <img src="img/x-twitter.svg" alt=""
-                     class="social-icon"
-                     width="40" height="40" loading="lazy">
+              <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X (öppnas i ny flik)">
+                <img src="img/x-twitter.svg" alt="" class="social-icon" width="40" height="40" loading="lazy">
               </a>
             </li>
             <li class="list-inline-item mb-2">
-              <a href="https://www.instagram.com"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 aria-label="Instagram (öppnas i ny flik)">
-                <img src="img/instagram.svg" alt=""
-                     class="social-icon"
-                     width="40" height="40" loading="lazy">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram (öppnas i ny flik)">
+                <img src="img/instagram.svg" alt="" class="social-icon" width="40" height="40" loading="lazy">
+              </a>            </li>
+            <li class="list-inline-item mb-2">
+              <a href="https://www.facebook.com/tcstenungsund/?locale=sv_SE" target="_blank" rel="noopener noreferrer" aria-label="TC Stenungsund (öppnas i ny flik)">
+                <img src="img/tcstenungsund.svg" alt="" class="social-icon" width="40" height="40" loading="lazy">
               </a>
             </li>
           </ul>
-          <a href="https://www.facebook.com/tcstenungsund/?locale=sv_SE"
-             class="footer-partner d-inline-block mt-2"
-             target="_blank" rel="noopener noreferrer"
-             aria-label="TC Stenungsund (öppnas i ny flik)">
-            <img src="img/tcstenungsund.svg"
-                 alt="TC Stenungsund"
-                 width="60" height="60"
-                 loading="lazy">
-          </a>
         </div>
       </div>
       <hr class="bg-secondary mt-4">
@@ -292,12 +231,9 @@
     </div>
   </footer>
 
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script
-    src="https://unpkg.com/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script
-    src="https://unpkg.com/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://unpkg.com/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://unpkg.com/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
 
 </body>
 
